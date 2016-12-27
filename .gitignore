@@ -58,3 +58,10 @@ C++/Arrays/Array/Debug/vc140.pdb
 C++/PointersDemo/Pointers/Debug/Pointers.pch
 *.pch
 *.pdb
+*.suo
+*stdafx.h
+*stdafx.cpp
+*targetver.h
+*ReadMe.txt
+*.sln
+*.db
