@@ -14,9 +14,9 @@ int main()
 	int cnt(1);
 	for (int i = 0; i < str.length(); i++)
 	{
-		char c = str[i];
-		if (isupper(c) == true)
+		if (str[i] >= 65 && str[i] <= 90) {
 			cnt++;
+		}
 	}
 	cout << cnt << endl;
     return 0;
