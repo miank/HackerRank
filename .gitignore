@@ -67,3 +67,5 @@ C++/PointersDemo/Pointers/Debug/Pointers.pch
 *.db
 *.opendb
 *.enc
+*.json
+*.sqlite
