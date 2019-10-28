@@ -1,24 +1,25 @@
-// CamelCase.cpp : Defines the entry point for the console application.
+// CamelCase.cpp : This file contains the 'main' function. Program execution begins and ends there.
 //
 
-#include "stdafx.h"
+#include "pch.h"
 #include <iostream>
 #include <string>
 using namespace std;
 
-
 int main()
 {
-	string str("");
+	string str;
 	cin >> str;
-	int cnt(1);
+	int word_count = 1;
+
 	for (int i = 0; i < str.length(); i++)
 	{
-		if (str[i] >= 65 && str[i] <= 90) {
-			cnt++;
+		if (isupper(str[i]))
+		{
+			word_count++;
 		}
 	}
-	cout << cnt << endl;
-    return 0;
+	cout << word_count << endl;
+    
 }
 
