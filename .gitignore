@@ -69,3 +69,7 @@ C++/PointersDemo/Pointers/Debug/Pointers.pch
 *.enc
 *.json
 *.sqlite
+Algorithms/AppleAndOranges/pch.h
+*.user
+*pch.cpp
+*pch.h
