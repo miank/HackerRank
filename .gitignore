@@ -73,3 +73,5 @@ Algorithms/AppleAndOranges/pch.h
 *.user
 *pch.cpp
 *pch.h
+*.db-shm
+*.db-wal
