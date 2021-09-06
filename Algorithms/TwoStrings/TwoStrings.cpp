@@ -1,38 +1,37 @@
-// TwoStrings.cpp
+// TwoString.cpp 
 
-#include "pch.h"
 #include <iostream>
+#include <map>
 #include <string>
 using namespace std;
 
-int main()
-{
-	int t(0);
-	cin >> t;
-	
-	while (t--)
+string twoStrings(string s1, string s2) {
+
+	map <char, int> k;
+	for (int y = 0; y < s1.length(); y++)
+		k[s1[y]] = 1;
+	int counter = 0;
+	for (int y = 0; y < s2.length(); y++)
 	{
-		string str1, str2;
-		cin >> str1 >> str2;
-
-		bool flag = true;
-
-		for (int i = 0; i < str1.length(); i++)
+		if (k[s2[y]])
 		{
-			char ch = str1[i];
-			int found = str2.find(ch);
-			if (found >= 0)
-			{
-				cout << "YES" << endl;
-				flag = false;
-				break;
-			}
-		}
-		if (flag)
-		{
-			cout << "NO" << endl;
+			counter = 1;
 		}
 	}
+	if (counter)
+		return "YES";
+	else
+		return "NO";
+}
+
+int main()
+{
+	string str1, str2;
+	cin >> str1 >> str2;
+
+	string result = twoStrings(str1, str2);
+	cout << result << endl;
+
 	return 0;
 }
 
